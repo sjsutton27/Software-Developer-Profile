@@ -80,6 +80,13 @@ body {
 
 .bold{
     font-weight: bold;
+    color: lightgray;
+}
+
+.list{
+    position: relative;
+    list-style: none;
+    margin: 10px 5px;
 }
 
 .contact-info ul{
