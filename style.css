@@ -72,8 +72,12 @@ body {
     margin: 10px 5px;
 }
 
-.text{
+.left-text{
     color: lightgray;
+}
+
+.right-text{
+    color: #003366;
 }
 
 .bold{
@@ -109,6 +113,7 @@ body {
     display: inline-block;
     border: 1px solid transparent;
     border-radius: 5px;
+    margin: 5px 1px;
   
     transition:
       background-color 0.1s,
