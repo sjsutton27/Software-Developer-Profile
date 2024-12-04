@@ -65,7 +65,7 @@ body {
     padding-top: 20px;
 }
 
-.title{
+.left-title{
     color: white;
     text-transform: capitalize;
     font-weight: 600;
@@ -133,4 +133,13 @@ body {
     flex: 2; 
     background-color: lightgrey;
     min-height: 100px;
+}
+
+.right-title{
+    color: #003366;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    margin: 10px 10px;
 }
