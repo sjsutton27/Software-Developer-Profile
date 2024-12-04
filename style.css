@@ -129,6 +129,31 @@ body {
     margin: 10px 5px;
 }
 
+ /* Dropdown Style */
+ .dropdown h3,
+ .right-container h2 {
+     cursor: pointer;
+     padding: 10px;
+     background-color: #f0f0f0;
+     border: 1px solid #ccc;
+     margin-bottom: 5px;
+     border-radius: 5px;
+ }
+ .dropdown h3:hover,
+ .right-container h2:hover {
+     background-color: #e0e0e0;
+ }
+ .dropdown-content,
+ .right-content {
+     display: none;
+     padding-left: 20px;
+ }
+ .dropdown-content ul,
+ .right-content ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
 .right-container {
     flex: 2; 
     background-color: lightgrey;

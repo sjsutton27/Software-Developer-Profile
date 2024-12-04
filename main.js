@@ -13,3 +13,12 @@ function copyEmail() {
         console.error("Failed to copy text: ", error);
     });
 }
+
+function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+}

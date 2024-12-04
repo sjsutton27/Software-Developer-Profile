@@ -17,94 +17,105 @@
                 <h2>Seth Sutton<br><span>Software Developer</span></h2>
             </div>
 
-            <div class="contact-info">
-                <h3 class="left-title">Contact Information</h3>
+        <div class="dropdown">
+            <h3 onclick="toggleDropdown('contactInfo')">Contact Information <i class="fa fa-caret-down"></i></h3>
+            <div id="contactInfo" class="dropdown-content">
                 <ul>
                     <li>
                         <span class="icon"><i class="fa-regular fa-envelope"></i></span>
                         <span id="emailText" class="text">sjsutton27@yahoo.com</span>
-                        <li><button class="link-button" onclick="copyEmail()">Copy Email</button></li>
+                        <button class="link-button" onclick="copyEmail()">Copy Email</button>
                     </li>
                     <li>
                         <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
                         <span id="linkedinText" class="text">Linkedin</span>
                         <a href="https://www.linkedin.com/in/seth-sutton/" target="_blank">
-                            <li><button class="link-button">Go to Linkedin</button></li>
+                            <button class="link-button">Go to Linkedin</button>
                         </a>
                     </li>
                 </ul>
             </div>
+        </div>
 
-            <div class="education">
-                <h3 class="left-title"> Education </h3>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-school"></i>
-                        <span class="text"> Northern Kentucky University </span>
-                    </li>
-                    <li>
-                        <span class="text"> <span class="bold"> Major: </span> Bachelor of Science in Computer Science</span>
-                    </li>
-                    <li>
-                        <span class="text"> <span class="bold">GPA: </span> 3.4</span>
-                    </li>
-                    <li>
-                        <span class="text"> <span class="bold">Minors: </span> Mathematics and Computer Information Technology </span>
-                    </li>
-                    <li>
-                        <span class="text"> <span class="bold">Date: </span> Aug 2019 - Dec 2023 </span>
-                    </li>
-                </ul>
+            <div class="dropdown">
+                <h3 onclick="toggleDropdown('education')">Education <i class="fa fa-caret-down"></i></h3>
+                <div id="education" class="dropdown-content">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-school"></i>
+                            <span class="text"> Northern Kentucky University </span>
+                        </li>
+                        <li>
+                            <span class="text"><span class="bold">Major:</span> Bachelor of Science in Computer Science</span>
+                        </li>
+                        <li>
+                            <span class="text"><span class="bold">GPA:</span> 3.4</span>
+                        </li>
+                        <li>
+                            <span class="text"><span class="bold">Minors:</span> Mathematics and Computer Information Technology</span>
+                        </li>
+                        <li>
+                            <span class="text"><span class="bold">Date:</span> Aug 2019 - Dec 2023</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="skills">
-                <h3 class="left-title"> Skills </h3>
-                <ul>  
-                    <li class="list">
-                        <i class="fa-solid fa-code"></i>
-                        <span class="bold"> Programming Languages </span>
-                        <ul class="list">
-                            <li>
-                                <span class="text"> Java </span>
-                            </li>
-                            <li >
-                                <span class="text"> HTML CSS JavaScript</span>
-                            </li>
-                            <li>
-                                <span class="text"> Python </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list">
-                        <i class="fa-solid fa-person"></i>
-                        <span class="bold"> Abilities </span>
-                        <ul class="list">
-                            <li><span class="text">IT Troubleshooting</span></li>
-                            <li><span class="text">Debugging</span></li>
-                            <li><span class="text">Coding</span></li>
-                            <li><span class="text">Problem-Solving</span></li>
-                            <li><span class="text">Designing</span></li>
-                            <li><span class="text">Networking</span></li>
-                            <li><span class="text">Customer Service</span></li>
-                            <li><span class="text">Management</span></li>
-                        </ul>
-                    </li>
-
-                </ul>
+            <div class="dropdown">
+                <h3 onclick="toggleDropdown('skills')">Skills <i class="fa fa-caret-down"></i></h3>
+                <div id="skills" class="dropdown-content">
+                    <ul>  
+                        <li class="list">
+                            <i class="fa-solid fa-code"></i>
+                            <span class="bold">Programming Languages</span>
+                            <ul class="list">
+                                <li><span class="text">Java</span></li>
+                                <li><span class="text">HTML CSS JavaScript</span></li>
+                                <li><span class="text">Python</span></li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <i class="fa-solid fa-person"></i>
+                            <span class="bold">Abilities</span>
+                            <ul class="list">
+                                <li><span class="text">IT Troubleshooting</span></li>
+                                <li><span class="text">Debugging</span></li>
+                                <li><span class="text">Coding</span></li>
+                                <li><span class="text">Problem-Solving</span></li>
+                                <li><span class="text">Designing</span></li>
+                                <li><span class="text">Networking</span></li>
+                                <li><span class="text">Customer Service</span></li>
+                                <li><span class="text">Management</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+
         <div class="right-container">
-            <h2>Right</h2>
-            <div class="projects">
-                <h2 class="right-title">Personal Projects</h2>
-                <h2 class="right-title">Work Projects</h2>
-                <h2 class="right-title">School Projects</h2>
+            <h2 onclick="toggleDropdown('personalProjects')">Personal Projects <i class="fa fa-caret-down"></i></h2>
+            <div id="personalProjects" class="right-content">
+                <ul>
+                    <li>Project 1</li>
+                    <li>Project 2</li>
+                </ul>
             </div>
-            <div class="jobs">
 
+            <h2 onclick="toggleDropdown('workProjects')">Work Projects <i class="fa fa-caret-down"></i></h2>
+            <div id="workProjects" class="right-content">
+                <ul>
+                    <li>Work Project 1</li>
+                    <li>Work Project 2</li>
+                </ul>
             </div>
-            <div class="certifications">
 
+            <h2 onclick="toggleDropdown('schoolProjects')">School Projects <i class="fa fa-caret-down"></i></h2>
+            <div id="schoolProjects" class="right-content">
+                <ul>
+                    <li>School Project 1</li>
+                    <li>School Project 2</li>
+                </ul>
             </div>
         </div>
     </div>
