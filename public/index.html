@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="profile-text">
+                <div class="image">
+                    <img class="profile-picture" src="./images/ProfilePicture.jpg" alt="Profile Picture">
+                </div>
+                <h2>Seth Sutton<br><span>Software Developer</span></h2>
+            </div>
+
+        <div class="dropdown">
+            <h3 onclick="toggleDropdown('contactInfo')">Contact Information <i class="fa fa-caret-down"></i></h3>
+            <div id="contactInfo" class="dropdown-content">
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                        <span id="emailText" class="left-text">sjsutton27@yahoo.com</span>
+                        <button class="link-button" onclick="copyEmail()">Copy Email</button>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                        <span id="linkedinText" class="left-text">Linkedin</span>
+                        <a href="https://www.linkedin.com/in/seth-sutton/" target="_blank">
+                            <button class="link-button">Go to Linkedin</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="dropdown">
+                <h3 onclick="toggleDropdown('education')">Education <i class="fa fa-caret-down"></i></h3>
+                <div id="education" class="dropdown-content">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-school"></i>
+                            <span class="left-text"> Northern Kentucky University </span>
+                        </li>
+                        <li>
+                            <span class="left-text"><span class="bold">Major:</span> Bachelor of Science in Computer Science</span>
+                        </li>
+                        <li>
+                            <span class="left-text"><span class="bold">GPA:</span> 3.4</span>
+                        </li>
+                        <li>
+                            <span class="left-text"><span class="bold">Minors:</span> Mathematics and Computer Information Technology</span>
+                        </li>
+                        <li>
+                            <span class="left-text"><span class="bold">Date:</span> Aug 2019 - Dec 2023</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <h3 onclick="toggleDropdown('skills')">Skills <i class="fa fa-caret-down"></i></h3>
+                <div id="skills" class="dropdown-content">
+                    <ul>  
+                        <li class="list">
+                            <i class="fa-solid fa-code"></i>
+                            <span class="bold">Programming Languages</span>
+                            <ul class="list">
+                                <li><span class="left-text">Java</span></li>
+                                <li><span class="left-text">HTML CSS JavaScript</span></li>
+                                <li><span class="left-text">Python</span></li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <i class="fa-solid fa-person"></i>
+                            <span class="bold">Abilities</span>
+                            <ul class="list">
+                                <li><span class="left-text">IT Troubleshooting</span></li>
+                                <li><span class="left-text">Debugging</span></li>
+                                <li><span class="left-text">Coding</span></li>
+                                <li><span class="left-text">Problem-Solving</span></li>
+                                <li><span class="left-text">Designing</span></li>
+                                <li><span class="left-text">Networking</span></li>
+                                <li><span class="left-text">Customer Service</span></li>
+                                <li><span class="left-text">Management</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            
+            <h2 onclick="toggleDropdown('personalProjects')">Personal Projects <i class="fa fa-caret-down"></i></h2>
+            <div id="personalProjects" class="right-content">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-bowl-food"></i><span class="right-text"> Soup Shop </span>
+                        <a href="https://soup-shop-e2841.web.app/home" target="_blank">
+                            <button class="link-button">Go to Soup Shop</button>
+                        </a>
+                    </li>
+                    <li><i class="fa-solid fa-ghost"></i><span class="right-text"> Monster Slayer </span>
+                        <a href="https://monster-slayer-364fd.web.app/" target="_blank">
+                            <button class="link-button">Go to Monster Slayer</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 onclick="toggleDropdown('workProjects')">Work Projects <i class="fa fa-caret-down"></i></h2>
+            <div id="workProjects" class="right-content">
+                <ul>
+                    <li><i class="fa-solid fa-newspaper"></i><span class="right-text"> NKyTribune</span>
+                        <a href="https://nkytribune.com/">
+                            <button class="link-button">Go to NKyTribune</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 onclick="toggleDropdown('schoolProjects')">School Projects <i class="fa fa-caret-down"></i></h2>
+            <div id="schoolProjects" class="right-content">
+                <ul>
+                    <li>
+                        <h3 class="right-text"> Riki System <h4> Date: Aug 2023 - Dec 2023</h4></h3><br>
+                        <span class="right-bold">Description: </span>
+                        <p>Engaged in the development of Riki that uses Python, Flask, and Jinja, a Wiki system at NKU, I focused on enhancing Register and Login Security, implementing MFA features, signup/login credentials and validations, and integrating Google's ReCAPTCHA for improved user authentication.</p><br>
+                    </li>
+                    <li>
+                        <h3 class="right-text"> AI with Cat, Dogs, and Wildlife Facial Recognition <h4> Date: Aug 2023 - Dec 2023</h4></h3><br>
+                        <span class="right-bold">Description: </span>
+                        <p>Created an AI in my Artificial Intelligence class using Python and a Kaggle dataset. The AI, trained to identify images of cats, dogs, or wild animals, features a user-friendly GUI for image selection.</p><br>
+                    </li>
+                    <li>
+                        <h3 class="right-text"> Rock-Paper-Scissors<h4> Date: Aug 2023 - Dec 2023</h4></h3><br>
+                        <span class="right-bold">Description: </span>
+                        <p>Created in Software Engineering class at NKU with the project demonstrating OOP with APIE and SOLID principles using Python. This project features an AI with multiple algorithms (Random, Paper-or-Rock, or Only-Scissors) for playing against the user.</p><br>
+                    </li>
+                    <li><h3 class="right-text"> Star Wars App<h4> Date: Jan 2023 - May 2023</h4></h3><br>
+                        <span class="right-bold">Description: </span>
+                        <p>Collaborated on a group project at NKU for my Mobile Development class in Android/Kotlin. We worked on a Star Wars app that made use of a Star Wars API called SWAPI from https://swapi.dev/ . During the project, we learned to use Jetpack Compose for creating resource cards and enhancing the app's functionality.</p><br>
+                    </li>
+                    <li>
+                        <h3 class="right-text"> Hospital Console Application<h4> Date: Jan 2023 - May 2023</h4></h3><br>
+                        <span class="right-bold">Description: </span>
+                        <p>Developed a semester project in Advanced Programming using C/C++ to create a simulated hospital logging system with a command guide for user interaction for Advanced Programming class at NKU. </p><br>
+                    </li>
+                    <li><span class="right-text"> All School Projects can be found in my </span>
+                        <a href="https://github.com/sjsutton27">
+                            <button class="link-button">Github</button>
+                        </a></li>
+                </ul>
+            </div>
+
+            <h2 onclick="toggleDropdown('jobs')"> Jobs <i class="fa fa-caret-down"></i></h2>
+            <div id="jobs" class="right-content">
+                <ul>
+                    <li>
+                        <h3 class="right-text"> Amazon Area Manager <h4> Date: Aug 2024 - Present </h4></h3><br>
+                        <span class="right-bold">Job Description: </span>
+                        <p>As an Area Manager, I lead a large team of 50+ hourly associates in a fast-paced
+                            production of a Fulfillment Center. My main role is to motivate, coach, and engage with
+                            your associates. The Area Manager role empowers me to take ownership in running a
+                            department efficiently, while investing and simplifying processes for the business.
+                        </p><br>
+                    </li>
+                    <li><h3 class="right-text"> Tier 1 Service Desk Technician and Web Developer at Global Business Solutions
+                        <h4> Date: Jan 2023 - June 2024  </h4></h3><br>
+                        <span class="right-bold">Job Description: </span>
+                        <p><ul>
+                            <li> • Company Description: Information Technology that services network infrastructure, service desk, physical security, and AVIT
+                            </li>
+                            <li> • Microsoft365: Outlook, Teams, Admin Center, etc. 
+                            </li>
+                            <li> • Manage Websites and Servers in MyKinsta and AWS. 
+                            </li>
+                            <li> • Design websites with CSS, Wordpress, and HTML.
+                            </li>
+                            <li> • Worked with Citrix, Barracuda, Wordpress and Splash Top. 
+                            </li>
+                            <li> • Provide Technical Assistance and Support to End-users by phone, email, and chat. 
+                            </li>
+                            <li> • Assist Clients in resolving Hardware, Software, and Network Issues.
+                            </li>
+                            <li> • Identify, Troubleshoot, and resolve technical problems in a timely manner (printers, VPNs, operating systems). 
+                            </li>
+                            <li> • Escalate conflicts to the appropriate teams. 
+                            </li>
+                            <li> • Document all client interactions and resolutions in the ticketing system.
+                            </li>
+                            <li> • Provide customer service to All clients' satisfaction.</li>
+                            <li> • Participate in ongoing training to stay up to date with new technology.
+                            </li>
+                        </ul>
+                        </p><br></li>
+                        <li>
+                            <h3 class="right-text"> UPS: Part-Time Supervisor <h4> Date: Nov 2019-Jan 2023 </h4></h3><br>
+                            <span class="right-bold">Job Description: </span>
+                            <p><ul>
+                                <li>• Company Description: United Parcel Service is a global logistics and package delivery
+                                    company known for its comprehensive supply chain management services.
+                                </li>
+                                <li>• Supervised Truck drivers, Hazmat auditors, Bad Address clerks, international
+                                    auditors, and loaders/unloaders.</li>
+                                <li>• Assumed various roles, conducted training, managed timecards, organized
+                                    schedules, and handled emails.</li>
+                            </ul>
+                            </p><br>
+                        </li>
+                </ul>
+            </div>
+
+            <h2 onclick="toggleDropdown('certifications')"> Certifications <i class="fa fa-caret-down"></i></h2>
+            <div id="certifications" class="right-content">
+                <ul>
+                    <li> <h3 class="right-text"> AWS Clould practitioner <h4> Status: In Progress </h4></h3><br>
+                        <span class="right-bold">Cert Description: </span>
+                        <p>The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology. 
+                        </p><br>
+                    </li>
+                    <li><h3 class="right-text"> CompTIA Network+ <h4> Status: In Progress </h4></h3><br>
+                        <span class="right-bold">Cert Description: </span>
+                        <p>Validates the core skills necessary to establish, maintain, troubleshoot and secure networks in any environment. 
+                        </p><br></li>
+                        <li><h3 class="right-text"> Oracle Certified Associate, Java SE 8 Programmer
+                            <h4> Status: In Progress </h4></h3><br>
+                            <span class="right-bold">Cert Description: </span>
+                            <p>The Java SE 8 Oracle Certified Associate (OCA) certification helps you build a foundational understanding of Java, and gaining this certification credential is the first of two steps in demonstrating you have the high-level skills needed to become a professional Java developer. 
+                            </p><br></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
