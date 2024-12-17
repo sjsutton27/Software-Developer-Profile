@@ -84,7 +84,9 @@ body {
     font-weight: bold;
     color: lightgray;
 }
-
+.right-bold{
+    font-weight: bold;
+}
 .list{
     position: relative;
     list-style: none;
